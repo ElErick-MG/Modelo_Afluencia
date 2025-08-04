@@ -2,7 +2,4 @@
 builder = "NIXPACKS"
 
 [deploy]
-startCommand = "gunicorn app:app --bind 0.0.0.0:$PORT --workers 1 --timeout 120"
-healthcheckPath = "/ping"
-healthcheckTimeout = 300
-restartPolicyType = "ON_FAILURE"
+startCommand = "python app.py"
