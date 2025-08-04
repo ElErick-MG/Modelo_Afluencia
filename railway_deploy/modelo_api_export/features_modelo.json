@@ -1,0 +1,17 @@
+{
+  "features": [
+    "Es_Feriado",
+    "Es_Vacaciones",
+    "Es_Normal",
+    "Es_Puente",
+    "Mes",
+    "Dia_Semana_Encoded",
+    "Trimestre",
+    "Temporada_Turistica_Encoded",
+    "Cobertura_Cantonal",
+    "Descripcion_Encoded",
+    "Diversidad_Actividades"
+  ],
+  "total_features": 11,
+  "descripcion": "Lista de columnas/features que requiere el modelo para hacer predicciones"
+}

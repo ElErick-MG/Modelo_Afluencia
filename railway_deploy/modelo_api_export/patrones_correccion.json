@@ -1,0 +1,112 @@
+{
+  "PATRONES_PROVINCIA": {
+    "Guayas": {
+      "tipo_region": "costa",
+      "factor_fin_semana": 1.4,
+      "factor_dias_laborales": 0.85,
+      "turismo_base": "alto",
+      "sensibilidad_vacaciones": 0.3
+    },
+    "Manabí": {
+      "tipo_region": "costa",
+      "factor_fin_semana": 1.6,
+      "factor_dias_laborales": 0.75,
+      "turismo_base": "muy_alto",
+      "sensibilidad_vacaciones": 0.4
+    },
+    "Santa Elena": {
+      "tipo_region": "costa",
+      "factor_fin_semana": 1.8,
+      "factor_dias_laborales": 0.6,
+      "turismo_base": "muy_alto",
+      "sensibilidad_vacaciones": 0.5
+    },
+    "Pichincha": {
+      "tipo_region": "sierra",
+      "factor_fin_semana": 1.3,
+      "factor_dias_laborales": 0.9,
+      "turismo_base": "muy_alto",
+      "sensibilidad_vacaciones": 0.2
+    },
+    "Azuay": {
+      "tipo_region": "sierra",
+      "factor_fin_semana": 1.35,
+      "factor_dias_laborales": 0.85,
+      "turismo_base": "alto",
+      "sensibilidad_vacaciones": 0.25
+    },
+    "Tungurahua": {
+      "tipo_region": "sierra",
+      "factor_fin_semana": 1.4,
+      "factor_dias_laborales": 0.8,
+      "turismo_base": "medio",
+      "sensibilidad_vacaciones": 0.3
+    },
+    "Pastaza": {
+      "tipo_region": "oriente",
+      "factor_fin_semana": 1.7,
+      "factor_dias_laborales": 0.7,
+      "turismo_base": "medio",
+      "sensibilidad_vacaciones": 0.6
+    },
+    "Morona Santiago": {
+      "tipo_region": "oriente",
+      "factor_fin_semana": 1.6,
+      "factor_dias_laborales": 0.75,
+      "turismo_base": "medio",
+      "sensibilidad_vacaciones": 0.55
+    },
+    "Galápagos": {
+      "tipo_region": "insular",
+      "factor_fin_semana": 1.1,
+      "factor_dias_laborales": 0.95,
+      "turismo_base": "muy_alto",
+      "sensibilidad_vacaciones": 0.1
+    }
+  },
+  "PATRONES_DIA_SEMANA": {
+    "0": {
+      "nombre": "Lunes",
+      "factor_turismo": 0.7,
+      "factor_local": 1.2,
+      "tipo": "laboral"
+    },
+    "1": {
+      "nombre": "Martes",
+      "factor_turismo": 0.6,
+      "factor_local": 1.3,
+      "tipo": "laboral"
+    },
+    "2": {
+      "nombre": "Miércoles",
+      "factor_turismo": 0.65,
+      "factor_local": 1.25,
+      "tipo": "laboral"
+    },
+    "3": {
+      "nombre": "Jueves",
+      "factor_turismo": 0.75,
+      "factor_local": 1.1,
+      "tipo": "laboral"
+    },
+    "4": {
+      "nombre": "Viernes",
+      "factor_turismo": 0.9,
+      "factor_local": 1.0,
+      "tipo": "pre_fin_semana"
+    },
+    "5": {
+      "nombre": "Sábado",
+      "factor_turismo": 1.4,
+      "factor_local": 0.8,
+      "tipo": "fin_semana"
+    },
+    "6": {
+      "nombre": "Domingo",
+      "factor_turismo": 1.3,
+      "factor_local": 0.85,
+      "tipo": "fin_semana"
+    }
+  },
+  "descripcion": "Patrones específicos por provincia y día de la semana para correcciones avanzadas"
+}
