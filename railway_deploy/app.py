@@ -163,6 +163,11 @@ def home():
         'status': 'activo'
     })
 
+@app.route('/ping', methods=['GET'])
+def ping():
+    """Endpoint simple de prueba"""
+    return jsonify({'status': 'ok', 'message': 'API funcionando correctamente'})
+
 @app.route('/health', methods=['GET'])
 def health():
     """Endpoint de salud"""
