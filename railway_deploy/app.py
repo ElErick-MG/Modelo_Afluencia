@@ -18,6 +18,19 @@ def cargar_modelo():
     global modelo, features_info, patrones
     
     try:
+        # Verificar que los archivos existen
+        import os
+        archivos_requeridos = [
+            'modelo_api_export/modelo_turismo_ecuador.pkl',
+            'modelo_api_export/features_modelo.json',
+            'modelo_api_export/patrones_correccion.json'
+        ]
+        
+        for archivo in archivos_requeridos:
+            if not os.path.exists(archivo):
+                print(f"❌ Archivo no encontrado: {archivo}")
+                return False
+        
         # Cargar modelo principal
         modelo = joblib.load('modelo_api_export/modelo_turismo_ecuador.pkl')
         print("✅ Modelo cargado exitosamente")
@@ -36,6 +49,8 @@ def cargar_modelo():
         
     except Exception as e:
         print(f"❌ Error cargando recursos: {str(e)}")
+        import traceback
+        print(f"Detalles del error: {traceback.format_exc()}")
         return False
 
 def aplicar_correccion_avanzada(prediccion_base, provincia, dia_semana, es_vacaciones=0, mes=1):
